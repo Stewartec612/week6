@@ -16,6 +16,7 @@ image.addEventListener('load', function (){
 input.addEventListener('input', function (){
     let text = this.value
     context.font = '30px Courier'
+    //
     context.drawImage(image, 0, 0)
     context.fillText(text, 450, 65)
 })
