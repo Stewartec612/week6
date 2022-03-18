@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Mouse Events</title>
+  <title>Drawing Program</title>
 
 
   <style>
@@ -31,7 +31,7 @@
   let canvas = document.querySelector('#canvas')
   let sizeRangeElement = document.querySelector('#size')
   let colorElement = document.querySelector('#color')
-  let clearButton = document.querySelector('#clear')
+  let clearButton = document.querySelector('#clear-button')
   let context = canvas.getContext('2d')
   context.fillStyle = 'white'
 
@@ -78,9 +78,11 @@
 
   })
   clearButton.addEventListener('click',function () {
+    if (clearButton)
+    context.fillStyle = '#ffffff'
+    context.fillRect(0,0,400,400)
 
-    canvas.fillRect(0, 0, 400, 400)
-    context.stroke()
+
   })
 //
 </script>
