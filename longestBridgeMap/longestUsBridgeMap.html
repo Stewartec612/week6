@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Longest US Bridges Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="mapStyle.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+    <script async defer src="longestUsBridgeMap.js"></script>
+
+
+
+
+</head>
+<!--/* Use the dataset below to draw a Chart.js bar chart of the bridge names and their span lengths.
+
+ You can draw the chart on the same page as the map, or you can make a new page.-->
+
+<!--Use the array you created in part 2 to avoid typing the data into your program again.
+
+Don't manually write the data into Chart.js arrays.*/-->
+<body>
+
+<!--Put all of this data into an array of objects, and then loop over that array to create the markers and popups. Don't create separate markers in your code.-->
+
+<!--Use the dataset below to draw a Leaflet map showing a marker for each of the five bridges with the longest spans in the USA.-->
+<!-------------------------------------------------------------------------------------------->
+
+<!--Bridge Name	City, State	Span (meters)	Location (latitude, longitude)-->
+
+<!--Verrazano-Narrows Bridge	New York, NY	1298.4	40.6066, -74.0447-->
+
+<!--Golden Gate Bridge	San Francisco and Marin, CA	1280.2	37.8199, -122.4783-->
+
+<!--Mackinac Bridge	Mackinaw and St Ignace, MI	1158.0	45.8174, -84.7278-->
+
+<!--George Washington Bridge	New York, NY and New Jersey, NJ	1067.0	40.8517, -73.9527-->
+
+<!--Tacoma Narrows Bridge	Tacoma and Kitsap, WA	853.44	47.2690, -122.5517-->
+<h3>The Longest Bridges in the United States</h3>
+
+<label for="chart">Chart of the longest bridges in the US</label>
+<div id="chart">
+
+<!--<table id="bridge-table">-->
+<canvas id="bridge-chart"></canvas>
+<!--    <tr class="table-header">-->
+<!--        <th>Bridge Name</th><th>City, State</th><th>Span(Meters)</th><th>Location(Latitude,Longitude)</th>-->
+<!--    </tr>-->
+<!--    <tr class="table-body">-->
+<!--        <td>Verrazano Bridge</td><td>New York,NY</td><td>1298.4</td><td>40.6066, -74.0447</td>-->
+<!--    </tr >-->
+<!--    <tr class="table-body">-->
+<!--        <td> Golden Gate Bridge</td><td>San Francisco and Marin,CA</td><td>1280.2</td><td>37.8199, -122.4783</td>-->
+<!--    </tr>-->
+<!--    <tr class="table-body">-->
+<!--        <td>Mackinac Bridge</td><td>	Mackinaw and St Ignace, MI</td><td>1158.0</td><td>45.8174, -84.7278</td>-->
+<!--    </tr>-->
+<!--    <tr class="table-body">-->
+<!--        <td>-George Washington Bridge</td><td>New York, NY and New Jersey, NJ</td><td>1067.0</td><td>40.8517, -73.9527</td>-->
+<!--    </tr>-->
+<!--    <tr class="table-body">-->
+<!--        <td>Tacoma Narrows Bridge</td><td>Tacoma and Kitsap, WA</td><td>853.44</td><td>47.2690, -122.5517</td>-->
+<!--    </tr>-->
+<!--</table>-->
+
+</div>
+
+<label for="map">Bridge locations on the map</label>
+<div id="map"></div>
+
+
+
+</body>
+</html>

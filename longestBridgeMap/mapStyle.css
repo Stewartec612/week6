@@ -1,0 +1,14 @@
+#bridge-chart{
+    border: 4px gray solid;
+    margin-bottom: 15px;
+}
+#chart{
+    font-family: sans-serif;
+}
+
+
+#map{
+    height: 500px;
+    width: 800px;
+    border: 1px gray solid;
+}
